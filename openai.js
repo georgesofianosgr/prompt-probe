@@ -11,6 +11,7 @@ const callAI = async ({
   functionDefinition,
   messages,
   data,
+  temperature
 }) => {
 
   const dataMessages = createDataMessages(data);
@@ -30,7 +31,7 @@ const callAI = async ({
   const response = await openaiClient.chat.completions.create({
     messages: messagePayload,
     model: process.env.MODEL,
-    temperature: 1,
+    temperature: temperature ?? 0,
     tools: [{ type: 'function', function: functionDefinition }],
     tool_choice: 'required',
   });

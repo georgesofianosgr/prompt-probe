@@ -6,6 +6,7 @@ module.exports = {
   including common temperatures, precipitation levels, and climate characteristics. Return a summary of the typical weather patterns for that location.
   Give more focus to the weather data provided.
 `,
+  temperature: 1,
   // This is the function that will be called. You can define this function at the end of the file
   functionDefinition: functionDefinition(),
   // This is an array of workflows. You can have as many workflows as you like that will run in parallel

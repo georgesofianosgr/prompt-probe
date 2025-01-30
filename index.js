@@ -33,6 +33,7 @@ async function runScenario(name) {
 
     const res = await callAI({
       systemPrompt: scenario.systemPrompt,
+      temperature: scenario?.temperature,
       functionDefinition: scenario.functionDefinition,
       messages: workflow.messages,
       data: workflow.data,
