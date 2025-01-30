@@ -28,6 +28,8 @@ function loadScenario(scenarioName) {
 async function runScenario(name) {
   const scenario = await loadScenario(name);
 
+  console.log(`Running scenario with temperature ${scenario.temperature ?? 0}`)
+
   const promises = scenario.workflows.map(async workflow => {
     const start = performance.now();
 
