@@ -1,0 +1,25 @@
+# Node.js dependencies
+node_modules/
+package-lock.json
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+.vscode/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Environment variables
+.env
+
+# Ignore everything inside the "scenarios" directory
+scenarios/*
+
+# But include the template.js file inside "scenarios"
+!scenarios/template.js
+
