@@ -27,7 +27,7 @@ module.exports = {
       ],
       // Here you can provide any data that you want to use in the chat, these will be created as assistant messages
       data: [{
-        title: "Here is a weather history of athens last year",
+        prompt: "Here is a weather history of athens last year",
         content: `
         {
           location: 'Athens, Greece',
